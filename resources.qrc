@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>resources/cat_cropped.jpeg</file>
+    </qresource>
+</RCC>
