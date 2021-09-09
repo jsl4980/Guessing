@@ -28,16 +28,16 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-        round.cpp
-        round.h
-        animal.cpp
-        animal.h
-        animalgenerator.cpp
-        animalgenerator.h
+        src/main.cpp
+        src/mainwindow.cpp
+        src/mainwindow.h
+        src/mainwindow.ui
+        src/round.cpp
+        src/round.h
+        src/animal.cpp
+        src/animal.h
+        src/animalgenerator.cpp
+        src/animalgenerator.h
 )
 
 qt5_add_resources(PROJECT_SOURCES resources.qrc)
