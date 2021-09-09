@@ -246,21 +246,6 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="guessCount">
-             <property name="font">
-              <font>
-               <pointsize>24</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Guess Count: 0</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item>
             <widget class="QPushButton" name="gameOverBtn">
              <property name="minimumSize">
               <size>
@@ -270,19 +255,6 @@
              </property>
              <property name="text">
               <string>Guess Right!</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="guessWrongBtn">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>48</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Guess Wrong</string>
              </property>
             </widget>
            </item>

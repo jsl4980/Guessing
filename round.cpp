@@ -1,7 +1,6 @@
 #include "round.h"
 
 Round::Round() :
-    guessCount(0),
     questionCount(0),
     clueCount(0),
     animalName("Cat"),
@@ -17,11 +16,6 @@ Round::~Round()
 std::string Round::getAnimalName()
 {
     return animalName;
-}
-
-int Round::getGuesses()
-{
-    return guessCount;
 }
 
 int Round::getClues()
@@ -48,12 +42,7 @@ int Round::guessRight()
 {
     gameOver = true;
     gameWon = true;
-    return ++guessCount;
-}
-
-int Round::guessWrong()
-{
-    return ++guessCount;
+    return ++questionCount;
 }
 
 int Round::giveClue()

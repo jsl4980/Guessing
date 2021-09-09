@@ -42,14 +42,6 @@ void MainWindow::on_gameOverBtn_clicked()
     }
 }
 
-void MainWindow::on_guessWrongBtn_clicked()
-{
-    setGuesses(round->guessWrong());
-    if(round->isGameOver()) {
-        finishRound();
-    }
-}
-
 void MainWindow::on_clueBtn_clicked()
 {
     setClues(round->giveClue());
@@ -64,8 +56,8 @@ void MainWindow::on_startOverBtn_clicked()
 void MainWindow::setupRound()
 {
     round = new Round();
-    setGuesses(0);
-    setClues(0);
+    setClues(round->getClues());
+    setQuestions(round->getQuestions());
     ui->animalLabel->setText(QString::fromStdString(round->getAnimalName()));
     QPixmap pic(":/images/resources/cat_cropped.jpeg");
     ui->animalPicture->setPixmap(pic);
@@ -91,11 +83,6 @@ void MainWindow::finishRound()
 void MainWindow::setQuestions(int q)
 {
     ui->questionLabel->setText(QString("Question Count: %1").arg(q));
-}
-
-void MainWindow::setGuesses(int g)
-{
-    ui->guessCount->setText(QString("Guess Count: %1").arg(g));
 }
 
 void MainWindow::setClues(int c)

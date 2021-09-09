@@ -11,18 +11,15 @@ public:
 
     std::string getAnimalName();
     int guessRight();
-    int guessWrong();
     int giveClue();
     int questionAsked();
 
-    int getGuesses();
     int getClues();
     int getQuestions();
     bool isGameOver();
     bool isGameWon();
 
 private:
-    int guessCount;
     int questionCount;
     int clueCount;
     std::string animalName;

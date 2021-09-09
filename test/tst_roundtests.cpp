@@ -7,7 +7,6 @@ TEST(RoundTests, Constructor)
 {
     Round round;
     EXPECT_EQ(round.getClues(), 0);
-    EXPECT_EQ(round.getGuesses(), 0);
     EXPECT_EQ(round.getQuestions(), 0);
 }
 

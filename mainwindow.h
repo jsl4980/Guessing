@@ -24,8 +24,6 @@ private slots:
 
     void on_gameOverBtn_clicked();
 
-    void on_guessWrongBtn_clicked();
-
     void on_clueBtn_clicked();
 
     void on_questionButton_clicked();
